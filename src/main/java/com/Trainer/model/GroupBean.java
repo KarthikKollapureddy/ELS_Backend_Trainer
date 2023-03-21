@@ -23,6 +23,7 @@ public class GroupBean {
 	private int groupSub;
 	private int groupLimit;
 	private int trainerId;
+	private int rating;
 	public int getGroupId() {
 		return groupId;
 	}
@@ -88,6 +89,25 @@ public class GroupBean {
 		this.groupSub = groupSub;
 		this.groupLimit = groupLimit;
 		this.trainerId = trainerId;
+	}
+	
+	public GroupBean(int groupId, String groupName, String groupDesc, int groupGrad, int groupSub, int groupLimit,
+			int trainerId,int rating) {
+		super();
+		this.groupId = groupId;
+		this.groupName = groupName;
+		this.groupDesc = groupDesc;
+		this.groupGrad = groupGrad;
+		this.groupSub = groupSub;
+		this.groupLimit = groupLimit;
+		this.trainerId = trainerId;
+		this.rating = rating;
+	}
+	public int getRating() {
+		return rating;
+	}
+	public void setRating(int rating) {
+		this.rating = rating;
 	}
 	
 	

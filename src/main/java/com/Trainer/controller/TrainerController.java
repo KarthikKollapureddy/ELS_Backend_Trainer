@@ -18,7 +18,7 @@ import com.Trainer.model.GroupBean;
 import com.Trainer.service.TrainerService;
 
 @RestController
-@RequestMapping("elearning/api/trainer/")
+@RequestMapping("/elearning/api/trainer")
 @CrossOrigin(origins="*")
 public class TrainerController {
 	
