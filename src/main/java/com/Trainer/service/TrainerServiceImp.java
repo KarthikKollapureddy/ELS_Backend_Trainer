@@ -56,17 +56,16 @@ public class TrainerServiceImp implements TrainerService {
 		
 	}
 	@Override
-	public String deleteGroup(Integer id) throws GroupNotFound {
+	public void deleteGroup(int id) throws GroupNotFound {
 		// TODO Auto-generated method stub
 		GroupBean res=groupDao.findByGroupId(id);
-		if(res!=null) {
-			groupDao.deleteById(id);
-			return "Success";
+		if(res==null) {
+			throw new GroupNotFound();
+			
 		}
 		
-		
-			throw new GroupNotFound();
-		
+		groupDao.deleteById(id);
+			
 		
 		
 	}

@@ -15,7 +15,7 @@ public interface TrainerService {
 
 	public GroupBean editGroup(GroupBean gr, Integer id);
 
-	public String deleteGroup(Integer id) throws GroupNotFound;
+	public void deleteGroup(int id) throws GroupNotFound;
 
 	public List<GroupBean> getAllClass();
 

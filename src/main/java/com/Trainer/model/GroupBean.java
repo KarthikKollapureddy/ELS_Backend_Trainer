@@ -10,7 +10,6 @@ import javax.persistence.Table;
 
 
 @Entity
-
 @Table(name="group_info")
 public class GroupBean {
 	
